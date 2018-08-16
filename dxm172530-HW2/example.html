@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+$(document).ready(function(){    
+  $("#clicker").click(function(){        
+    $("#T1").focus(function(){            
+      $("#myFocus").show();        
+    });     
+  });        
+
+  $("#T1").blur(function(){        
+    $("#myFocus").hide();    
+  });
+});
+</script>
+</head>
+<body>
+<div id="clicker" style="cursor:pointer; border:1px solid black; width:70px;">
+  Click here!
+</div>
+<br /><br />
+<input id="T1" name="Textbox" type="text" />
+<div id="myFocus" style="display: none;">focused!</div>
+</html>
